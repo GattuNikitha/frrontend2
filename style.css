@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+#projectsContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    padding: 12px 20px;
+    background: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+.project-item:hover {
+    background: darkgray;
+    transform: scale(1.05);
+}
+
+.project-item.active {
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+iframe {
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    background-color: white;
+}
